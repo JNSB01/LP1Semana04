@@ -4,6 +4,11 @@ namespace MyFirstMethod
 {
     class Program
     {
+        /// <summary>
+        /// Receives 2 numbers from player and calls functions CountTo10 and CountToN
+        /// twice (counting to 10 twice, and once for every given number)
+        /// </summary>
+        /// <param name="args">Arguments given on console</param>
         static void Main(string[] args)
         {
             string aux = Console.ReadLine();
