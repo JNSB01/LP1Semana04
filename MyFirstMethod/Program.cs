@@ -14,13 +14,16 @@ namespace MyFirstMethod
             string aux = Console.ReadLine();
             int nCount = Convert.ToInt32(aux);
             string aux2 = Console.ReadLine();
-            int nCount2 = Convert.ToInt32(aux);
+            int nCount2 = Convert.ToInt32(aux2);
 
             CountTo10();
             CountTo10();
             CountToN(nCount);
             CountToN(nCount2);
         }
+        /// <summary>
+        /// Counts to 10
+        /// </summary>
         private static void CountTo10()
         {
             for (int i = 1; i <= 10; i++)
@@ -29,6 +32,11 @@ namespace MyFirstMethod
             }
         }
 
+        /// <summary>
+        /// Counts to number given by user
+        /// </summary>
+        /// <param name="n">Number given by user to which the method counts
+        /// </param>
         private static void CountToN(int n)
         {
             for (int i = 1; i <= n; i++)
