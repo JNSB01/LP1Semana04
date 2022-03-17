@@ -20,6 +20,7 @@ namespace MyFirstMethod
             CountTo10();
             CountToN(nCount);
             CountToN(nCount2);
+            CountToN(3,6);
         }
         /// <summary>
         /// Counts to 10
@@ -40,6 +41,20 @@ namespace MyFirstMethod
         private static void CountToN(int n)
         {
             for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        /// <summary>
+        /// Counts the numbers between the given parametres
+        /// </summary>
+        /// <param name="n1">lower limit where the method starts counting
+        /// </param>
+        /// <param name="n2">higher limit to which the method counts</param>
+        private static void CountToN(int n1, int n2)
+        {
+            for (int i = n1; i < n2; i++)
             {
                 Console.WriteLine(i);
             }
